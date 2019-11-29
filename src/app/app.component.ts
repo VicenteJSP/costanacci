@@ -9,6 +9,15 @@ export class AppComponent {
   title = 'costanacci';
   fibonacci = 1;
 
+  constructor() {
+    console.log(
+      '%cBy %cBit %cNovaSoft \n%cwww.BitNovaSoft.com',
+      'font-size:25px;color:white;text-shadow: 2px 3px black;background-color:black',
+      'font-size:50px;color:#FF4542;text-shadow: 2px 3px black;background-color:black',
+      'font-size:50px;color:#0096fe;text-shadow: 2px 3px black;background-color:black',
+      'font-size:30px');
+  }
+
   calculaFibonacci(valor: number): number {
     console.log(valor);
     let fibonacci = 1;
